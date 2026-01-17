@@ -31,17 +31,4 @@ public class EnrollmentController {
         return ResponseEntity.ok(enrollmentService.createEnrollment(enrollments));
     }
 
-    @GetMapping("/course/{courseId}")
-    public ResponseEntity<List<EnrollmentResponseDTO>> getCourseEnrollments(@PathVariable Long courseId)
-    {
-            return ResponseEntity.ok(enrollmentService.getCourseEnrollments(courseId));
-    }
-
-    @GetMapping("/student/{studentName}")
-    public ResponseEntity<List<EnrollmentResponseDTO>> getEnrolledStudents(@PathVariable String studentName)
-    {
-        return ResponseEntity.ok(enrollmentService.getEnrolledStudents(studentName));
-    }
-
-
 }
