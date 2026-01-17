@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enrollments</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="navbar">
+    <h2>Course Enrollment</h2>
+    <ul>
+        <li><a href="index.html">Courses</a></li>
+        <li><a href="enroll.html">Enroll</a></li>
+        <li><a href="enrollments.html">Enrollments</a></li>
+    </ul>
+</nav>
+
+<section id="enrollments">
+    <h2>Enrollment List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Student</th>
+                <th>Course ID</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="enrollmentTable"></tbody>
+    </table>
+</section>
+
+<script src="app.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    loadEnrollments();
+});
+</script>
+</body>
+</html>

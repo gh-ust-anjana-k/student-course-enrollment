@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enroll Student</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="navbar">
+    <h2>Course Enrollment</h2>
+    <ul>
+        <li><a href="index.html">Courses</a></li>
+        <li><a href="enroll.html">Enroll</a></li>
+        <li><a href="enrollments.html">Enrollments</a></li>
+    </ul>
+</nav>
+
+<section id="enroll">
+    <h2>Enroll Student</h2>
+    <form id="enrollmentForm">
+        <input type="text" id="studentName" placeholder="Student Name" required>
+
+        <select id="courseSelect" required>
+            <option value="">Select Course</option>
+        </select>
+
+        <button type="submit">Enroll</button>
+    </form>
+
+    <!-- <h3>Recent Enrollments</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Student</th>
+                <th>Course ID</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="recentEnrollments"></tbody>
+    </table> -->
+</section>
+
+
+<script src="app.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    loadCourses(); // populate dropdown
+    
+    // Log to verify courses loaded
+    setTimeout(() => {
+        const select = document.getElementById("courseSelect");
+        console.log("Dropdown options count:", select.options.length);
+    }, 1000);
+});
+</script>
+</body>
+</html>
