@@ -133,4 +133,4 @@ Frontend will start at **http://localhost:5500**
 ## Author
 **Anjana K**  
 
-- GitHub: Anjana-K-Trumio
+- GitHub: gh-ust-anjana-k
